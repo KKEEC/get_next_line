@@ -6,21 +6,11 @@
 /*   By: kkc <kkc@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:03:48 by kkc               #+#    #+#             */
-/*   Updated: 2024/12/02 16:13:52 by kkc              ###   ########.fr       */
+/*   Updated: 2024/12/02 16:37:02 by kkc              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
-size_t	gnl_ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
 
 char	*gnl_ft_strchr(const char *str, int c)
 {
@@ -78,8 +68,8 @@ static	char	*ft_copynjoin(const char *s1, const char *s2, char *rstr)
 
 char	*gnl_ft_strjoin(const char *s1, const char *s2)
 {
-	int	s1len;
-	int	s2len;
+	int		s1len;
+	int		s2len;
 	char	*rstr;
 
 	if (!s1 && !s2)
